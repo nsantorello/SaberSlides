@@ -1,0 +1,29 @@
+.tk-acuta
+{
+	color: white;
+	font-size: 16pt;
+}
+
+.slideheader
+{
+	font-size: 40pt;
+	width: 600px;
+}
+
+.saber-button
+{
+	color: white;
+}
+
+a,
+a:visited
+{
+	color: #3BB9FF;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #ADDFFF;
+	text-decoration: none;
+}

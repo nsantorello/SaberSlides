@@ -5,38 +5,37 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script type="text/javascript" src="saber/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="saber/jquery.scrollTo-min.js"></script>
-    <script type="text/javascript" src="saber/settings.js"></script>
-    <script type="text/javascript" src="saber/init.js"></script>
+    <script type="text/javascript" src="saber/sabersettings.js"></script>
+    <script type="text/javascript" src="saber/saberinit.js"></script>
   </head>
   <body>
     <!-- Create divs for each slide, and be sure to give it both a class of 
     "slide" and "slide#" where # is the number of the slide.  Also don't forget to 
-    add divs of class "button" to progress to the next slide!
+    add divs of class "buttonTo#" to progress to the #th slide!
+    (Note: these classes are configurable in sabersettings.js)
     -->
-    <div class="slide slide1">
+    <div class="saber-slide saber-slide1">
       This is slide 1!
       <br />
-      <div class="button">Next slide</div>
+      <div class="saber-button saber-buttonTo2">Next slide</div>
     </div>
-    <div class="slide slide2">
+    <div class="saber-slide saber-slide2">
       This is slide 2!
       <br />
-      <div class="button">Next slide</div>
+      <div class="saber-button saber-buttonTo3">Next slide</div>
     </div>
-    <div class="slide slide3">
+    <div class="saber-slide saber-slide3">
       This is slide 3!
       <br />
-      <div class="button">Next slide</div>
+      <div class="saber-button saber-buttonTo4">Next slide</div>
     </div>
-    <div class="slide slide4">
+    <div class="saber-slide saber-slide4">
       This is slide 4!
       <br />
-      <div class="button">Next slide</div>
+      <div class="saber-button saber-buttonTo5">Next slide</div>
     </div>
-    <div class="slide slide5">
-      This is slide 5!
-      <br />
-      <div class="button">Next slide</div>
+    <div class="saber-slide saber-slide5">
+      This is slide 5 (the last one)!
     </div>
   </body>
 </html>

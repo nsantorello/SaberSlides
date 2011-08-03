@@ -1,6 +1,7 @@
 function resizeSlides()
 {
-	$(slideSel).css('height', $(window).height());
+	var h = $(window).height();
+	$(slideSel).css('height', h < 640 ? 640 : h); // ensure each slide is at least 640px tall
 }
 
 function createButtons()
