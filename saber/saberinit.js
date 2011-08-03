@@ -1,14 +1,15 @@
 function resizeSlides()
 {
-	$('.slide').css('height', $(window).height());
+	$(slideSel).css('height', $(window).height());
 }
 
 function createButtons()
 {
-	$('.button').click(
+	var numSlides = $(buttonSel).length;
+	$(buttonSel).click(
 		function(e)
 		{
-			$.scrollTo('.slide2', transitionDuration, { "easing": easingType });
+			$.scrollTo(slideSel + '2', transitionDuration, { "easing": easingType });
 		}
 	);
 }
