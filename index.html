@@ -39,46 +39,76 @@
     add divs of class "buttonTo#" to progress to the #th slide!
     (Note: these classes are configurable in sabersettings.js)
     -->
-    <div class="saber-slide saber-slide1" align="center" style="height: 640px;">
-      <div class="tk-acuta">
+    <div class="saber-slide saber-slide1" align="center">
+      <div class="tk-acuta content" style="width: 800px">
       	<div class="slideheader">SaberSlides</div>
-      	<div style="margin-top: 50px">A template for creating slide-based webpages just like this one!</div>
+      	<div style="margin-top: 50px"><em>A template for creating slide-based webpages just like this one!</em></div>
       	<br /><br />
-      <div class="saber-button saber-buttonTo2">Next slide</div>
-            <div class="saber-button saber-buttonTo6">Download</div>
+      <div class="saber-button saber-buttonTo2" style="float:left">Give me a walkthrough</div>
+            <div id="greenbutton" class="saber-button saber-buttonTo6" style="float:right">Just download it</div>
+            <div style="margin-top:300px" class="tk-acuta">An <a href="http://unlicense.org">unlicensed</a> project by <a href="http://twitter.com/nsantorello">Noah Santorello</a>.</div>
       </div>
     </div>
     <div class="saber-slide saber-slide2" align="center">
-      <div class="tk-acuta">
+      <div class="tk-acuta content" style="width: 750px">
       	<div class="slideheader">Slides</div>
-      	<div style="margin-top: 50px">TODO: Go into detail about how to construct a slide.</div>
+      	<div style="margin-top: 50px">Slides are essentially "pages" of content.  Only one slide shows on the screen at a time.</div>
+      	<div style="margin-top: 50px">To create a slide, you must give the HTML element two classes:
+      	<ol style="text-align:left; margin-left: 100px">
+      	  <li><span class="tk-share-techmono">saber-slide</span> to identify it as a slide
+      	  <li><span class="tk-share-techmono">saber-slide#</span> to identify the index of the slide<br />
+      	    <span style="color:#f59898">(remember: replace # with the actual slide number!)</span>
+      	    </li>
+      	    </ol>
+      	    </div>
+      	    
+      	<div style="margin-top: 50px">An example slide with the index of 5 looks like:</div>
+      	<div  class="tk-share-techmono">&lt;div class="saber-slide saber-slide5"&gt;I'm the fifth slide!&lt;div&gt;</div>
       	<br /><br />
-      <div class="saber-button saber-buttonTo3">Next slide</div></div>
+      <div class="saber-button saber-buttonTo3" style="width: 450px">Cool!  How do I transition between slides?</div></div>
     </div>
     <div class="saber-slide saber-slide3" align="center">
-<div class="tk-acuta">
+      <div class="tk-acuta content" style="width: 750px">
       	<div class="slideheader">Buttons</div>
-      	<div style="margin-top: 50px">TODO: Go into detail about how to construct a button.</div>
+      	<div style="margin-top: 50px">You transition from slide to slide using buttons.</div>
+      	<div style="margin-top: 50px">To create a button you must give the HTML element two classes:
+      	<ol style="text-align:left; margin-left: 100px">
+      	  <li><span class="tk-share-techmono">saber-button</span> to identify it as a button
+      	  <li><span class="tk-share-techmono">saber-buttonTo#</span> to identify the slide number the button jumps to<br />
+      	    <span style="color:#f59898">(remember: replace # with the actual slide number!)</span>
+      	    </li>
+      	    </ol>
+      	    </div>
+      	    
+      	<div style="margin-top: 50px">An example button that jumps to slide 5 looks like:</div>
+      	<div  class="tk-share-techmono">&lt;div class="saber-button saber-buttonTo5"&gt;I'm a button!&lt;div&gt;</div>
       	<br /><br />
-      <div class="saber-button saber-buttonTo4">Next slide</div></div>
+      <div class="saber-button saber-buttonTo4">Awesome.  Can I tweak stuff?</div></div>
     </div>
     <div class="saber-slide saber-slide4" align="center">
-      <div class="tk-acuta">
+      <div class="tk-acuta content" style="width: 600px">
       	<div class="slideheader">Settings</div>
-      	<div style="margin-top: 50px">TODO: Go into detail about sabersettings.js</div>
+      	<div style="margin-top: 50px">The <a href="https://github.com/nsantorello/SaberSlides/blob/master/saber/sabersettings.js">sabersettings.js</a> file allows you to modify the easing, transition duration, and selectors used for slides and buttons.</div>
+      	<div style="margin-top: 50px">It's all been kept very simple.</div>
       	<br /><br />
-      <div class="saber-button saber-buttonTo5">Next slide</div></div>
+      <div class="saber-button saber-buttonTo5">What about dependencies?</div></div>
     </div>
     <div class="saber-slide saber-slide5" align="center">
-      <div class="tk-acuta">
+      <div class="tk-acuta content" style="width: 600px">
       	<div class="slideheader">Dependencies</div>
-      	<div style="margin-top: 50px">TODO: Go into detail about dependencies (jQuery, jQuery Easing, jQuery scrollTo)</div>
+      	<div style="margin-top: 50px; text-align:center">SaberSlides depends on
+      	  <ul style="text-align:left; margin-left: 200px; list-style-type:none">
+      	   <li><a href="http://jquery.com">jQuery</a></li>
+      	   <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing</a></li>
+      	   <li><a href="http://plugins.jquery.com/project/ScrollTo">jQuery scrollTo</a></li>
+      	  </ul>
+      	All libraries are bundled with SaberSlides.</div>
       	<br /><br />
-      <div class="saber-button saber-buttonTo6">Next slide</div></div>
+      <div class="saber-button saber-buttonTo6">This is <span style="color:#f59898">rad</span>.  Gimme!</div></div>
     </div>
     <div class="saber-slide saber-slide6" align="center">
-      <div class="tk-acuta" style="width: 600px">
-      	<div class="slideheader" style="margin-bottom: 800px">Get it!</div>
+      <div class="tk-acuta content" style="width: 600px">
+      	<div class="slideheader" style="margin-bottom: 60px">Get it!</div>
       	<a href="https://github.com/nsantorello/SaberSlides/zipball/master"><div align="center" style="float:left; vertical-align:bottom">
       	  <div class="fadehover" style="height: 179px; width:200px">
 			<img src="dl_bw.png" alt="" class="a" border="0" />
@@ -93,7 +123,11 @@
 			</div>
       	  <div style="margin-top:25px">visit on github</div></a>
       	</div>
+      	<div style="clear:both"></div>
+      	
+      <div class="saber-button saber-buttonTo2" style="margin-top:100px">Send me back to the walkthrough.</div></div>
       </div>
+      
     </div>
   </body>
 </html>

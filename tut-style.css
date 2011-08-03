@@ -4,6 +4,12 @@
 	font-size: 16pt;
 }
 
+.tk-share-techmono
+{
+	color: #97f7a5;
+	font-size: 16pt;
+}
+
 .slideheader
 {
 	font-size: 40pt;
@@ -13,8 +19,73 @@
 .slide
 {
 	width: 100%;
-	position: relative;
-	height: 640px;
+	min-height: 640px;
+}
+
+.saber-button {
+   width: 350px;
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.saber-button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.saber-button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+   
+   #greenbutton {
+   border-top: 1px solid #97f7a5;
+   background: #408c64;
+   background: -webkit-gradient(linear, left top, left bottom, from(#2e6b46), to(#408c64));
+   background: -webkit-linear-gradient(top, #2e6b46, #408c64);
+   background: -moz-linear-gradient(top, #2e6b46, #408c64);
+   background: -ms-linear-gradient(top, #2e6b46, #408c64);
+   background: -o-linear-gradient(top, #2e6b46, #408c64);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+#greenbutton:hover {
+   border-top-color: #234d34;
+   background: #234d34;
+   color: #ccc;
+   }
+#greenbutton:active {
+   border-top-color: #282928;
+   background: #282928;
+   }
+
+.content
+{
+	padding-top: 100px;
 }
 
 .saber-button
