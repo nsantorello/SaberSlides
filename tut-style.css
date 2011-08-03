@@ -10,6 +10,13 @@
 	width: 600px;
 }
 
+.slide
+{
+	width: 100%;
+	position: relative;
+	height: 640px;
+}
+
 .saber-button
 {
 	color: white;
@@ -27,3 +34,21 @@ a:hover
 	color: #ADDFFF;
 	text-decoration: none;
 }
+
+div.fadehover {
+	position: relative;
+	display:block;
+	}
+ 
+img.a {
+	position: absolute;
+	left: 0;
+	top: 0;
+        z-index: 10;
+	}
+ 
+img.b {
+	position: absolute;
+	left: 0;
+	top: 0;
+	}
