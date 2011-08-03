@@ -8,7 +8,7 @@ function createButtons()
 	$('.button').click(
 		function(e)
 		{
-			$.scrollTo('.slide2', 1500, { "easing": "easeOutQuint" });
+			$.scrollTo('.slide2', transitionDuration, { "easing": easingType });
 		}
 	);
 }
