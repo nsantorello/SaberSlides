@@ -1,3 +1,6 @@
+// Rather than toying around in the main saberinit.js, important settings are
+// extracted here for your convenience.  :)
+
 // How long slide transitions take.
 var transitionDuration = 1000; // milliseconds
 
@@ -6,5 +9,6 @@ var transitionDuration = 1000; // milliseconds
 var easingType = "easeOutQuint";
 
 // Set the selectors that you use for the slides and the buttons.
-var slideSel = '.slide';
-var buttonSel = '.button';
+var slideSel = '.saber-slide'; // the selector to select each slide
+var buttonSel = '.saber-button'; // the selector to select each button
+var buttonToSel = buttonSel + 'To'; // the selector to specify what button to go to, suffixed with a slide #

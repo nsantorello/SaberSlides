@@ -9,7 +9,15 @@ function createButtons()
 	$(buttonSel).click(
 		function(e)
 		{
-			$.scrollTo(slideSel + '2', transitionDuration, { "easing": easingType });
+			// Regex to grab the suffixing integer
+			var regex = new RegExp(buttonToSel.substring(1) + '\\d+', 'g'); // need to substring buttonToSel to remove the prefixing "."
+			var input = e.currentTarget.className; // grab class string 
+			if (regex.test(input)) 
+			{
+				var slideToScrollTo = input.match(regex)[0].match(/\d+/g);  // grab the first slide number to scroll to
+				// Scroll to the slide number of the first match.
+				$.scrollTo(slideSel + slideToScrollTo, transitionDuration, { "easing": easingType });
+			}
 		}
 	);
 }
