@@ -1,0 +1,1 @@
+* Recenter on window resize.  Keep track of last selected slide, and then when window resize is done call scrollTo on that slide index.
