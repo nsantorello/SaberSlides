@@ -4,6 +4,11 @@ function resizeSlides()
 	$(slideSel).css('height', h < 640 ? 640 : h); // ensure each slide is at least 640px tall
 }
 
+function goToSlide(slideIndex)
+{
+	$.scrollTo(slideSel + slideIndex, transitionDuration, { "easing": easingType });
+}
+
 function createButtons()
 {
 	var numSlides = $(buttonSel).length;
@@ -17,7 +22,7 @@ function createButtons()
 			{
 				var slideToScrollTo = input.match(regex)[0].match(/\d+/g);  // grab the first slide number to scroll to
 				// Scroll to the slide number of the first match.
-				$.scrollTo(slideSel + slideToScrollTo, transitionDuration, { "easing": easingType });
+				goToSlide(slideToScrollTo);
 			}
 		}
 	);
